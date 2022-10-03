@@ -1,5 +1,5 @@
 resource "null_resource" "run_some_code" {
   provisioner "local-exec" {
-    command = "echo ${TF_WORKSPACE}"
+    command = "echo : ${terraform.workspace}"
   }
 }
