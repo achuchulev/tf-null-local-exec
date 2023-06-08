@@ -5,7 +5,6 @@ resource "null_resource" "run_some_code" {
   }
   
   provisioner "local-exec" {
-    #command = "echo ${terraform.workspace}"
-    command = "ENV | grep TF_*"
+    command = "echo ${terraform.workspace}"
   }
 }
